@@ -14,9 +14,21 @@
   },
   "license": "MIT",
   "author": "Jianqiang Du <jackdu2013@163.com> (https://github.com/yurikong)",
-  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/yurikong/hamibot-types.git"
+  },
+  "main": "index.js",
+  "scripts": {
+    "cz": "cz"
+  },
+  "devDependencies": {
+    "commitizen": "^4.3.1",
+    "cz-conventional-changelog": "^3.3.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
