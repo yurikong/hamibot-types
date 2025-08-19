@@ -20,15 +20,22 @@
   },
   "main": "index.js",
   "scripts": {
-    "cz": "cz"
+    "cz": "cz",
+    "prepare": "husky"
   },
   "devDependencies": {
     "commitizen": "^4.3.1",
-    "cz-conventional-changelog": "^3.3.0"
+    "cz-conventional-changelog": "^3.3.0",
+    "husky": "^9.1.7"
   },
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "prepare-commit-msg": "exec < /dev/tty && npx cz --hook || true"
     }
   }
 }
