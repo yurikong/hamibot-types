@@ -5,6 +5,7 @@
   "keywords": [
     "hamibot",
     "types",
+    "@types",
     "typescript"
   ],
   "homepage": "https://github.com/yurikong/hamibot-types#readme",
@@ -18,8 +19,12 @@
     "type": "git",
     "url": "https://github.com/yurikong/hamibot-types.git"
   },
-  "main": "index.js",
+  "types": "./src/index.d.ts",
+  "files": [
+    "src"
+  ],
   "scripts": {
+    "dev": "tsc --watch",
     "cz": "cz",
     "prepare": "husky"
   },
@@ -28,7 +33,8 @@
     "@commitlint/config-conventional": "^19.8.1",
     "commitizen": "^4.3.1",
     "cz-conventional-changelog": "^3.3.0",
-    "husky": "^9.1.7"
+    "husky": "^9.1.7",
+    "typescript": "^5.9.2"
   },
   "config": {
     "commitizen": {
