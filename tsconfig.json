@@ -11,8 +11,8 @@
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-    "rootDir": "src"
+    "rootDir": "types"
   },
-  "include": ["src/**/*.d.ts"],
+  "include": ["types/**/*.d.ts"],
   "exclude": ["node_modules"]
 }

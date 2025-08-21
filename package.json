@@ -19,9 +19,9 @@
     "type": "git",
     "url": "https://github.com/yurikong/hamibot-types.git"
   },
-  "types": "./src/index.d.ts",
+  "types": "./types/index.d.ts",
   "files": [
-    "src"
+    "types"
   ],
   "scripts": {
     "dev": "tsc --watch",
